@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Formulario Información Alta Telefónica</title>
+  </head>
+  <body>
+      <form>
+    <h1>Formulario Información Alta Telefónica</h1>
+    <fieldset class="bloque">
+      <legend>Datos Personales</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre"maxlength="30" /><br/>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos"maxlength="60"/><br/>
+      <label for="direccion">Dirección:</label>
+      <input type="text" name="direccion"maxlength="60"/><br/>
+      <label for="cp">Código Postal:</label>
+      <input type="text" name="cp"maxlength="5"/><br/>
+      <label for="localidad">Localidad:</label>
+      <input type="text" name="localidad" />
+    </fieldset>
+
+    <fieldset class="bloque">
+      <legend>Tipo de Contratación</legend>
+      <input type="radio" name="contratacion" value="N"
+      checked>
+      <span>Nueva Contratación</span> </input>
+      <input type="radio" name="contratacion" value="P">
+       <span>Portabilidad</span>  </input>
+      <input type="radio" name="contratacion" value="C">
+      <span>Cambio de Contrato</span>  </input> </br></br>
+      <label for="company">Elija la compañía actual:</label>
+      <select name="company">
+          <option value="M">Movistar</option>
+          <option value="O">Orange</option>
+          <option value="V">Vodafone</option>
+          <option value="Y">Yoigo</option>
+          <option value="N">No Tengo Ninguna Compañia</option>
+      </select>
+      <label for="portabilidad">En caso de portabilidad, elija la nueva compañia:</label>
+      <select name="portabilidad">
+          <option value="M">Movistar</option>
+          <option value="O">Orange</option>
+          <option value="V">Vodafone</option>
+          <option value="Y">Yoigo</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="bloque">
+        <legend>Datos Bancarios</legend>
+        <label for="pais">País:</label>
+        <input type="text" name="pais" value="ES" readonly="readonly"/>
+        <span>(solo válido ES)</span></br>
+        <label for="iban">Control IBAN:</label>
+        <input type="text" name="iban" placeholder="XX" maxlength="2" />
+        <span>(dos dígitos)</span></br>
+        <label for="entidad">Entidad:</label>
+        <input type="text" name="entidad"placeholder="XXXX" maxlength="4" />
+        <span>(cuatro dígitos)</span></br>
+        <label for="sucursal">Sucursal:</label>
+        <input type="text" name="sucursal"placeholder="XXXX" maxlength="4" />
+        <span>(cuatro dígitos)</span></br>
+        <label for="dc">DC:</label>
+        <input type="text" name="dc" placeholder="XX" maxlength="2"/>
+        <span>(dos dígitos)</span></br>
+        <label for="cuenta">Cuenta:</label>
+        <input type="text" name="cuenta"placeholder="XXXXXXXXXX" maxlength="10" />
+        <span>(diez dígitos)</span>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos Estadísticos- ¿Cómo nos conoció?</legend>
+        <input type="checkbox" name="tv" value="TV"
+        ><span>A través de la TV</span></input></br>
+      <input type="checkbox" name="radio" value="RADIO">
+       <span>A través de la Radio</span></input></br>
+      <input type="checkbox" name="internet" value="INTERNET">
+      <span>A través de Internet</span></input></br>
+      <input type="checkbox" name="otros" value="OTROS">
+      <span>Otros</span></input></br></br>
+      <input type="range" class="valoracion" name="valoracion" min="1" max="5" step="1" value="0"><span>Valoración [1-5]</span></input></br></br>
+      <span>Fecha de la Encuesta:</span><input type="date" name="fecha" value="2019-01-01" />
+      </fieldset>
+
+<input type="submit"value="Enviar Datos">
+<input type="reset" value="Borrar Datos">
+    </form>
+    <button onclick="mostrarValoracion()" class="btn">Mostrar Valoración</button>
+    <button onclick="mostrarNumeroDeCuenta()" class="btn">Mostrar Cuenta</button>
+    <button onclick="mostrarDiaSemana()" class="btn">Mostrar Día Semana</button>
+  </body>
+
+</html>

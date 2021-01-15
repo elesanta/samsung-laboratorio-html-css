@@ -1,0 +1,34 @@
+input[type="text"] {
+  background-color: yellow;
+}
+
+fieldset {
+  background-color: aqua;
+  border-color: aqua;
+  border-radius: 3px;
+}
+
+legend {
+  background-color: red;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  text-shadow: yellow 3px 3px;
+}
+
+label,
+span {
+  font-weight: bold;
+}
+
+.bloque {
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100px;
+  background-color: pink;
+}
