@@ -52,22 +52,22 @@
     <fieldset class="bloque">
         <legend>Datos Bancarios</legend>
         <label for="pais">País:</label>
-        <input type="text" name="pais" value="ES" readonly="readonly"/>
+        <input id= "pais" type="text" name="pais" value="ES" readonly="readonly"/>
         <span>(solo válido ES)</span></br>
         <label for="iban">Control IBAN:</label>
-        <input type="text" name="iban" placeholder="XX" maxlength="2" />
+        <input id="iban" type="text" name="iban" placeholder="XX" maxlength="2" />
         <span>(dos dígitos)</span></br>
         <label for="entidad">Entidad:</label>
-        <input type="text" name="entidad"placeholder="XXXX" maxlength="4" />
+        <input id="entidad" type="text" name="entidad"placeholder="XXXX" maxlength="4" />
         <span>(cuatro dígitos)</span></br>
         <label for="sucursal">Sucursal:</label>
-        <input type="text" name="sucursal"placeholder="XXXX" maxlength="4" />
+        <input id="sucursal" type="text" name="sucursal"placeholder="XXXX" maxlength="4" />
         <span>(cuatro dígitos)</span></br>
         <label for="dc">DC:</label>
-        <input type="text" name="dc" placeholder="XX" maxlength="2"/>
+        <input id="dc" type="text" name="dc" placeholder="XX" maxlength="2"/>
         <span>(dos dígitos)</span></br>
         <label for="cuenta">Cuenta:</label>
-        <input type="text" name="cuenta"placeholder="XXXXXXXXXX" maxlength="10" />
+        <input id="cuenta" type="text" name="cuenta"placeholder="XXXXXXXXXX" maxlength="10" />
         <span>(diez dígitos)</span>
       </fieldset>
 
@@ -81,7 +81,7 @@
       <span>A través de Internet</span></input></br>
       <input type="checkbox" name="otros" value="OTROS">
       <span>Otros</span></input></br></br>
-      <input type="range" class="valoracion" name="valoracion" min="1" max="5" step="1" value="0"><span>Valoración [1-5]</span></input></br></br>
+      <input id="valoracion" type="range" name="valoracion" min="1" max="5" step="1" > <span>Valoración [1-5]</span></input></br></br>
       <span>Fecha de la Encuesta:</span><input type="date" name="fecha" value="2019-01-01" />
       </fieldset>
 

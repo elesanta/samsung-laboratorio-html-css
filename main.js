@@ -1,17 +1,18 @@
 function mostrarValoracion() {
-  const boton = document.body.querySelector('input[type="range"]');
-  alert(boton.value);
+  const valor = document.querySelector("#valoracion").value;
+  alert("Has valorado con " + valor + " puntos");
 }
 
 function mostrarNumeroDeCuenta() {
-  const pais = document.body.querySelector("input[name='pais']");
-  const iban = document.body.querySelector("input[name='iban']");
-  const entidad = document.body.querySelector("input[name='entidad']");
-  const sucursal = document.body.querySelector("input[name='sucursal']");
-  const dc = document.body.querySelector("input[name='dc']");
-  const cuenta = document.body.querySelector("input[name='cuenta']");
+  const pais = document.querySelector("#pais");
+  const iban = document.querySelector("#iban");
+  const entidad = document.querySelector("#entidad");
+  const sucursal = document.querySelector("#sucursal");
+  const dc = document.querySelector("#dc");
+  const cuenta = document.querySelector("#cuenta");
   alert(
-    pais.value +
+    "Le informamos que su cuenta bancaria es: " +
+      pais.value +
       "-" +
       iban.value +
       "-" +
@@ -39,5 +40,7 @@ function mostrarDiaSemana() {
     "Viernes",
     "Sábado",
   ];
-  alert(dias[diaSemana], diaSemana);
+  alert(
+    "La fecha seleccionada en el elemento de fecha es un " + dias[diaSemana]
+  );
 }
