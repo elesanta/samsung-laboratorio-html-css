@@ -55,19 +55,19 @@
         <input id= "pais" type="text" name="pais" value="ES" readonly="readonly"/>
         <span>(solo válido ES)</span></br>
         <label for="iban">Control IBAN:</label>
-        <input id="iban" type="text" name="iban" placeholder="XX" maxlength="2" />
+        <input id="iban" type="text" name="iban" pattern="[0-9]{2}" maxlength="2" minlength="2"value=""placeholder="XX" required />
         <span>(dos dígitos)</span></br>
         <label for="entidad">Entidad:</label>
-        <input id="entidad" type="text" name="entidad"placeholder="XXXX" maxlength="4" />
+        <input id="entidad" type="text" name="entidad" pattern="[0-9]{4}" maxlength="4" minlenght="4" value=""placeholder="XXXX" required />
         <span>(cuatro dígitos)</span></br>
         <label for="sucursal">Sucursal:</label>
-        <input id="sucursal" type="text" name="sucursal"placeholder="XXXX" maxlength="4" />
+        <input id="sucursal" type="text" name="sucursal" pattern="[0-9]{4}" maxlength="4" minlenght="4" value=""placeholder="XXXX" required />
         <span>(cuatro dígitos)</span></br>
         <label for="dc">DC:</label>
-        <input id="dc" type="text" name="dc" placeholder="XX" maxlength="2"/>
+        <input id="dc" type="text" name="dc" pattern="[0-9]{2}" maxlength="2" minlength="2"value=""placeholder="XX" required />
         <span>(dos dígitos)</span></br>
         <label for="cuenta">Cuenta:</label>
-        <input id="cuenta" type="text" name="cuenta"placeholder="XXXXXXXXXX" maxlength="10" />
+        <input id="cuenta" type="text" name="cuenta" pattern="[0-9]{10}" maxlength="10" minlength="10"value=""placeholder="XXXXXXXXXX" required />
         <span>(diez dígitos)</span>
       </fieldset>
 
